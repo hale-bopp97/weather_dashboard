@@ -4,6 +4,7 @@ Application that allows for search of a five day forcast.
 ## Getting Started
 
 Enter a city name into the search field to see a 5 day forcast.
+Old searches create buttons the user can use to see that forcast again.
 
 ### Dependencies
 
