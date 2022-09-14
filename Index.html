@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <title>Weather Dash</title>
+</head>
+<body>
+    <header class="navbar navbar-dark bg-dark">
+        <h1 class="display-4 text-light p-2 mx-auto">Weather Forcast</h1>
+    </header>
+    <div class="container-fluid">
+        <div class="row mt-2">
+            <!-- sidebar... -->
+            <aside class="col-lg-4">
+                <div class="card bg-light p-2 mb-2">
+                    <!-- form to enter city name... -->
+                    <h4>City Name:</h4>
+                    <form class="form-inline" id="enter-city-form">
+                        <input class="form-control sm2" id="enter-city-input" type="search" aria-label="Search">
+                        <button type="button" class="btn btn-primary" type="submit" id="submit-form">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                    <!-- buttons made out of previously seached cities... -->
+                    <ul class="list-group mt-2" id="list-of-cities"></ul>
+                </div>
+            </aside>
+            <!-- area for the current forcast... -->
+            <div class="col-lg-8">    
+                <!-- <h1>helloooooo</h1> -->
+                <section class="card p-2" id="current-city" style="display:none;">
+                    <h1 id="cities"></h1>
+                    <h4 id="current-date"></h4>
+                    <p id="temperature"></p>
+                    <p id="current-humidity"></p>
+                    <p id="wind-speed"></p>
+                    <p id="ultraviolet-index"> UV Index: <span class="colors"></span></p>
+                </section>
+                <!-- area for the five day forcast... -->
+                <section class="mt-2 mb-2" id="five-day-cards" style="display:none;">
+                    <h4>Five Day Forcast:</h4>
+                    <!-- five day forcast cards... -->
+                    <div class="day-cards">
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="./script1.js"></script>
+</body>
+</html>
